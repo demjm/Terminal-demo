@@ -1,0 +1,40 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.caret.blinking {
+  animation: blinker 1s step-start infinite;
+  height: 20px;
+  width: 8px;
+  background-color: #000000;
+  float: left;
+}
+.caret.idle {
+  height: 20px;
+  width: 8px;
+  background-color: #000000;
+  float: left;
+}
+.line {
+  width: "100%";
+  justify-content: "flex-start";
+  align-items: center;
+  flex-wrap: "no-wrap";
+  flex-direction: "row";
+  float: left;
+  /*
+  background-color: red;
+  */
+}
+.auto-text {
+  height: 20px;
+  float: left;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
